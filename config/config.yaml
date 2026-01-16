@@ -1,0 +1,4 @@
+PULL_INTERVAL: 600
+STATUS_URL: "http://192.168.100.1/cgi-bin/status_cgi"
+EVENT_URL: "http://192.168.100.1/cgi-bin/event_cgi"
+OUTPUT_DIR: "./data"

@@ -1,0 +1,13 @@
+services:
+  arris_status_scraper:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: Arris_Status_Scraper
+    environment:
+      - PGID=1000
+      - PUID=1000
+    volumes:
+      - ${BASE_DIR}/config:/app/config
+      - ${BASE_DIR}/data:/app/data
+    restart: unless-stopped
